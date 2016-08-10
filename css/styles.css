@@ -1,12 +1,12 @@
 h1 {
   text-align: center;
-  font-family: fantasy;
+  font-family: cursive;;
   font-size: 40pt;
 }
 
 h3 {
   text-align: left;
-  font-family: fantasy;
+  font-family: cursive;
 }
 
 body {
@@ -14,8 +14,21 @@ body {
 }
 
 .container {
-  background-color: #919394;
+  background-color: #e6f7ff;
+  font-family: fantasy;
+  font-size: 10pt;
+  border: solid 10px white;
+  padding-bottom: 20px;
 }
 .form-group {
   background-color: #BBE4F2;
+}
+
+.form-control {
+  font-size: 14pt;
+}
+
+.page-header {
+  border-bottom: solid 5px black;
+
 }
