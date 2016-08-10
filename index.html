@@ -5,23 +5,83 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Mad Libs</title>
+    <title>Survey</title>
   </head>
   <body>
     <div class="container">
       <h1>Please fill out our survey!</h1>
-      <div id="blanks">
         <h3>What is your favorite pizza topping?</h3>
+        <img src="img/pizza.jpg">
         <form>
           <select class="form-control" id="pizza">
-            <option value="1">Pepperoni</option>
-            <option value="2">Sausage</option>
-            <option value="3">Cheese only</option>
-            <option value="4">Chicken</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Sausage">Sausage</option>
+            <option value="Cheese">Cheese</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Veggies">Veggies</option>
+            <option value="None">None</option>
           </select>
 
+          <div class="radio">
+            <h3>What is your favorite soda?</h3>
+            <img src="img/soda.jpg">
+            <br>
+            <label>
+              <input type="radio" name="flavor" value="coke" checked>
+              Coke
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="pepsi">
+              Pepsi
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="drpepper">
+              Dr. Pepper
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="sprite">
+              Sprite
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="orange">
+              Orange
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="born">Date of Birth</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
           <button type="submit" class="btn">Show me my answers!</button>
         </form>
+        <h3>Your favorite pizza topping:</h3>
+        <div id="outputpizza">
+        <p><span class="pizza"></span></p>
+        </div>
+        <h3>Your favorite soda:</h3>
+        <div id="outputflav">
+          <p><span class="flavor"></span></p>
+        </div>
+        <h3>Your date of birth:</h3>
+        <div id="outputdob">
+        <p><span class="born"></span></p>
+        </div>
+        <h3>Your favorite color:</h3>
+        <div id="outputfavcolor">
+        <p><span class="color"></span></p>
+        </div>
     </div>
+  </div>
   </body>
 </html>
