@@ -17,7 +17,7 @@ body {
   background-color: #e6f7ff;
   font-family: fantasy;
   font-size: 10pt;
-  border: solid 10px white;
+  border: solid 5px black;
   padding-bottom: 20px;
 }
 .form-group {
@@ -29,6 +29,11 @@ body {
 }
 
 .page-header {
-  border-bottom: solid 5px black;
+  border: solid 5px black;
+  background-color: #c8e1ea;
 
+}
+
+.btn {
+  font-size: 15pt;
 }
